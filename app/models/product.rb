@@ -17,7 +17,7 @@ class Product < ApplicationRecord
     .joins(:reviews)
     .group("products.id")
     .order("reviews_count desc")
-    .limit(1)
+    .limit(3)
     )}
 
 
