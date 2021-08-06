@@ -8,6 +8,9 @@ class Product < ApplicationRecord
 
   scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
 
+  scope :made_in_usa, -> { where(country_of_origin: ["United States", 
+    "USA", "America", "U.S.A."])}
+
   private
     def titleize_product
       self.name = self.name.titleize
