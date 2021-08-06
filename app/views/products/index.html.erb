@@ -1,7 +1,7 @@
 <h1>Mario's Fine Foods</h1>
 
 
-<% if @products.any? %>
+<h2><% if @products.any? %>
   <ul>
     <% @products.each do |product| %>
       <li><%= link_to product.name, product_path(product) %></li>
@@ -9,7 +9,7 @@
   </ul>
 <% else %>
   <p>There are no products yet.</p>
-<% end %>
+<% end %><h2>
 
 
 <p><%= link_to "Create new product", new_product_path %></p>
