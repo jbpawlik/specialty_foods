@@ -4,9 +4,10 @@
   <%= f.text_field :name, class: "form-control" %>
   <%= f.label :name %>
   <br>
-  <%= f.number_field :cost, class: "form-control" %>
+  <%= f.number_field :cost, {class: "form-control number", :step => 0.01} %>
   <%= f.label :cost %>
   <br>
   <%= f.text_field :country_of_origin, class: "form-control" %>
   <%= f.label :country_of_origin %>
+  <p><%= f.submit %></p>
 <% end %>

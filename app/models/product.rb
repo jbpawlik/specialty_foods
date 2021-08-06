@@ -11,5 +11,5 @@ class Product < ApplicationRecord
       self.name = self.name.titleize
       self.country_of_origin = self.country_of_origin.titleize
     end
-  end
+  
 end
