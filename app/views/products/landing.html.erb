@@ -1,5 +1,6 @@
 <h1>Mario's Fine Foods</h1>
-<h2>Since 1982, Mario's has been a beloved staple of the independent grocery scene. Mario's specializes in imported mushrooms, domestic maple products, and what his grandchildren refer to as "<em>fire</em> flowers."
+<%= image_tag "bob.jpg" %>
+<p>Since 1982, Mario's has been a beloved staple of the independent grocery scene. Mario's specializes in imported mushrooms, domestic maple products, and what his grandchildren refer to as "<em>fire</em>"" flowers.</p>
 
 <p><%= link_to "See All of Our Products", products_path(@product) %></p>
 
@@ -7,6 +8,12 @@
   <div class="row">
     <div class="col-4">
       <h2>Newest Products:</h2>
+      <% most_recent = @products.three_most_recent %>
+      <ul>
+        <% most_recent.to_a.each do |product| %>
+          <li><%= link_to product.name, product_path(product) %><li>
+        <% end %>
+      </ul>
     </div>
     <div class="col-4">
       <h2>All Products</h2>
