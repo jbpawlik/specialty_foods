@@ -1,5 +1,5 @@
 <h1><%= @product.name %></h1>
-<h3>$<%= @product.cost %></h3>
+<h3><%= number_to_currency(@product.cost)  %></h3>
 <h3><%= @product.country_of_origin %>
 
 <% if @product.reviews.any? %>
@@ -21,5 +21,5 @@
 
 <p><%= link_to "Edit", edit_product_path(@product) %></p>
 <p><%= link_to "Delete", product_path(@product), :data => {:confirm => "You sure?", :method => "delete"} %></p>
-
+ 
 <p><%= link_to "Return to products", products_path %></p>
