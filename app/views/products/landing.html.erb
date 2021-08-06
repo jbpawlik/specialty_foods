@@ -26,10 +26,10 @@
     </div>
     <div class="col-4">
       <h4>Most Reviewed</h4>
-      <% most_recent = @products.three_most_recent %>
+      <% popular = @products.most_reviewed %>
       <ul>
-        <% most_recent.to_a.each do |product| %>
-          <li><%= link_to product.name, product_path(product) %><li>
+        <% popular.to_a.each do |product| %>
+          <li><% most_pop = Product.find(product.id) %><%= link_to most_pop.name, product_path(product) %><li>
         <% end %>
       </ul>
     </div>

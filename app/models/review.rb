@@ -8,7 +8,6 @@ class Review < ApplicationRecord
 
   before_save(:titleize_review)
 
-
   private
   def titleize_review
     self.author = self.author.titleize

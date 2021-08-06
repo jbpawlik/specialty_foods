@@ -11,6 +11,16 @@ class Product < ApplicationRecord
   scope :made_in_usa, -> { where(country_of_origin: ["United States", 
     "USA", "America", "U.S.A."])}
 
+  
+  scope :most_reviewed, -> {(
+    select("products.id, count(reviews.product_id) AS reviews_count")
+    .joins(:reviews)
+    .group("products.id")
+    .order("reviews_count desc")
+    .limit(1)
+    )}
+
+
   private
     def titleize_product
       self.name = self.name.titleize
