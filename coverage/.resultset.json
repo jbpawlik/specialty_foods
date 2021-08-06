@@ -1,6 +1,33 @@
 {
   "RSpec": {
     "coverage": {
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/product.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/review.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
@@ -29,14 +56,6 @@
         "branches": {
         }
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -54,17 +73,8 @@
         ],
         "branches": {
         }
-      },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1628263734
+    "timestamp": 1628266180
   }
 }
