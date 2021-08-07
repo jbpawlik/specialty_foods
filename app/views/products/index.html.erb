@@ -27,7 +27,7 @@
           <h3 class="newProductText"><%= link_to "Add Product", new_product_path %></h3>
         </div>
       <% else %>
-        <h3>There are no products yet.</h3>
+        <h3>There are no products yet. <%= link_to "Add Product", new_product_path %></h3>
       <% end %>
     </div>
     <h1 id="homeLink"><%= link_to "Back to Home", '/' %></h1>
