@@ -16,9 +16,21 @@
 
 @import "bootstrap";
 
-img {
-  height: 400px;
+body{
+padding: 5em;
+}
+#bob {
+  height: 400;
+  border: 10px solid black;
 }
 ul {
   list-style: circle;
+}
+#reviewText {
+  word-wrap: break-word;
+  padding: 1em;
+
+}
+#product_pic {
+  width: 5em;
 }

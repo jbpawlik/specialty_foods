@@ -1,6 +1,9 @@
-<h1>Review: <%= @review.author %></h1>
-<h2>Product: <%= @product.name %></h2>
-<h3><%= @review.content_body %></h3>
+<h1><%= @product.name %></h1>
+<%= image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{@product.name}"])}", width: "100px") %>
+<%# <%= image_tag "#{Faker::LoremPixel.image}" %>
+<h3>Review by: <%= @review.author %></h3>
+<h3>Rating: <%= @review.rating %> out of 5 Stars</h3>
+<h3 id="reviewText"><%= @review.content_body %></h3>
 
 <p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>
 <p><%= link_to "Delete review", product_review_path(@product, @review), :data => {:confirm => "Are you sure?", :method => "delete"} %></p>
