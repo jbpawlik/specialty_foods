@@ -1,5 +1,9 @@
-<h3>Add a New Product:</h3>
-
-<%= render "layouts/product_form", :object => @product %>
-
-<p><%= link_to "Return to Products", products_path(@product) %></p>
+<body id="newProduct">
+  <div class="container backbox">
+    <h1 id="newProductHeader">Add a New Product:</h1>
+    <br>
+    <%= render "layouts/product_form", :object => @product %>
+    <br>
+    <h1 class="linkBack"><%= link_to "Return to Products", products_path(@product) %></h1>
+  </div>
+</body>

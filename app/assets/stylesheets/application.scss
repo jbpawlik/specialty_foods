@@ -32,14 +32,21 @@ font-size: x-large;
 }
 ul {
   list-style: none;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    color: black;
+    }
+  a:hover {
+    color:rgb(48, 15, 15)
+  }
 }
 #reviewText {
   word-wrap: break-word;
   padding: 1em;
 }
 .productPic {
-  margin-left: 20%;
-  width: 10em;
+  width: 20em;
   border: 3px solid black;
 }
 #authorCredit {
@@ -54,14 +61,25 @@ ul {
   background-size: cover;
 }
 #productShow{
-  background: image-url('store_shelf.jpg');
+  background: image-url('produce.jpg');
   background-size: cover;
 }
 #productsPage{
   background: image-url('store_shelf.jpg');
   background-size: cover;
 }
-#productLink, #homeLink {
+#editProduct {
+  background: image-url('salami.jpb');
+  background-size: cover;
+}
+#productLink, #homeLink, .linkBack {
+  a {
+    text-decoration: none;
+    color: black;
+    }
+    a:hover {
+      color:rgb(48, 15, 15)
+    }
   text-align: center;
 }
 #productsHeader {
@@ -75,12 +93,14 @@ ul {
 .backbox {
   background-color: rgba(255, 235, 205, 0.836);
   border: 20px double black;
-  padding: 2em;
-  margin-top: 2em;
+  padding: 1em;
 }
-.col-6 {
-  text-align: right;
-  margin-right: 5%;
+.productPage {
+  text-align: center;
+  padding: 1em;
+}
+.productImageFrame {
+  padding: 1em;
 }
 #addNewProduct {
   background-color: rgba(255, 235, 205, 0.836);
@@ -104,23 +124,33 @@ ul {
   margin-right: 4%;
   color:rgba(255, 235, 205, 0);
   text-decoration: none;
+  transition: .5s ease;
+  backface-visibility: hidden
+}
+.productCard:hover {
+  filter: grayscale(100%);  
 }
 .col-3:hover{
-  a{
-  display: block;
-  color:rgba(10, 9, 7, 0.836);
-  font-size: 36px;
+  a {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px honeydew;  
+    font-size: 36px;
+  }
+  a:hover {
+    color:rgb(48, 15, 15)
   }
 }
 .gridText {
-  margin-top:40%;
-  margin-bottom: 50%;
+  margin-top:30%;
+  margin-bottom: 30%;
   display: flex;
-  align-items: center;
   justify-content:center;
   a {
     color:rgba(255, 235, 205, 0);
     text-decoration: none;
+  }
+  a:hover {
+    color:rgb(48, 15, 15)
   }
 }
 .newProductText {
@@ -135,10 +165,47 @@ ul {
     text-decoration: none;
     color: black;
     }
+    a:hover {
+      color:rgb(48, 15, 15)
+    }
 }
 #homeLink {
+  padding-top: 1em;
   a {
   text-decoration: none;
   color: black;
+  }
+  a:hover {
+    color:rgb(48, 15, 15)
+  }
+}
+#newProduct {
+  background: image-url('deli2.jpg');
+  background-size: cover;
+}
+.formLabel {
+  display: flex;
+  flex-direction: row;
+}
+#newProductSubmit {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#newProductHeader {
+  background-color: rgba(255, 235, 205, 0.836);
+  border: 5px double rgb(0, 0, 0);
+  text-align: center;
+}
+.form-control {
+  border:black 1px solid;
+}
+.col-4 {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color:rgb(48, 15, 15)
   }
 }
