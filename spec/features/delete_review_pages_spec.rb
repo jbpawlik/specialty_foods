@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe "adding a review" do
-  it "it adds a new review" do
+describe "deletes a review" do
+  it "it deletes a review" do
     visit products_path
     click_link 'Add Product'
     fill_in 'Name', :with => 'Salt'
@@ -14,6 +14,8 @@ describe "adding a review" do
     fill_in 'text_area', :with => 'The best kind of food is the kind that keeps on feeding your mouth and your heart with food'
     fill_in 'Rating', :with => '5'
     click_on 'Create Review'
-    expect(page).to have_content 'Bertilda'
+    click_on 'Bertilda'
+    click_on 'Delete review'
+    expect(page).to have_no_content('Bertilda')
   end
 end
