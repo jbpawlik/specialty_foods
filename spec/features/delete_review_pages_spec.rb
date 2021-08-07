@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe "deletes a review" do
-  it "it deletes a review" do
+describe "editing a review" do
+  it "it edits a review" do
     visit products_path
     click_link 'Add Product'
     fill_in 'Name', :with => 'Salt'
@@ -15,7 +15,9 @@ describe "deletes a review" do
     fill_in 'Rating', :with => '5'
     click_on 'Create Review'
     click_on 'Bertilda'
-    click_on 'Delete review'
-    expect(page).to have_no_content('Bertilda')
+    click_on 'Edit review'
+    fill_in 'Author', :with => 'Bartumba'
+    click_on 'Update Review'
+    expect(page).to have_content('Bartumba')
   end
 end
