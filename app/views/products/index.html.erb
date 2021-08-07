@@ -1,36 +1,35 @@
 <body id="productsPage">
-  <h1 id="productsHeader">Mario's Fine Foods</h1>
-  <h4>
-    <% if @products.any? %>
-      <% @products.each_with_index do |product, index| %>
-        <% if index === 0 %>
-          <div class="row">
-            <div class="col-3" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
-              <%= link_to product.name, product_path(product) %><br>
-              <%# image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}", class: "productPagePic") %>
-            </div>
-          <% elsif index % 4 === 0 %>
+  <div class="container backbox">
+    <h1 id="productsHeader">Mario's Fine Foods</h1>
+      <% if @products.any? %>
+        <% @products.each_with_index do |product, index| %>
+          <% if index === 0 %>
+            <div class="row">
+              <div class="col-3 productCard" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
+                <h3 class="gridText"><%= link_to product.name, product_path(product) %></h3>
+                <%# image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}", class: "productPagePic") %>
+              </div>
+          <% elsif index % 3 === 0 %>
             </div>
             <div class="row">
-              <div class="col-3" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
-                <%= link_to product.name, product_path(product) %><br>
+              <div class="col-3 productCard" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
+                <h3 class="gridText"><%= link_to product.name, product_path(product) %></h3>
                 <%# image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}", class: "productPagePic") %>
               </div>
           <% else %>
-            <div class="col-3" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
-              <%= link_to product.name, product_path(product) %><br>
+            <div class="col-3 productCard" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
+              <h3 class="gridText"><%= link_to product.name, product_path(product) %></h3>
               <%# image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}", class: "productPagePic") %>
             </div>
           <% end %>
+        <% end %>
+        <div class="col-3" id="addNewProduct">
+          <h3 class="newProductText"><%= link_to "Add Product", new_product_path %></h3>
+        </div>
+      <% else %>
+        <h3>There are no products yet.</h3>
       <% end %>
-    <div class=row>
-  <% else %>
-    <p>There are no products yet.</p>
-  <% end %><h4>
+    </div>
+    <h1 id="homeLink"><%= link_to "Back to Home", '/' %></h1>
   </div>
-
-
-  <p><%= link_to "Create new product", new_product_path %></p>
-  <p><%= link_to "Back to Home", '/' %></p>
-
-</body>>
+</body>

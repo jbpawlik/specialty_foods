@@ -58,10 +58,10 @@ ul {
   background-size: cover;
 }
 #productsPage{
-  background: image-url('deli2');
+  background: image-url('store_shelf.jpg');
   background-size: cover;
 }
-#productLink {
+#productLink, #homeLink {
   text-align: center;
 }
 #productsHeader {
@@ -69,7 +69,8 @@ ul {
   border: 20px double black;
   padding: .25em;
   text-align: center;
-  margin: 1em;
+  font-size: 64px;
+  margin-bottom: .25em;
 }
 .backbox {
   background-color: rgba(255, 235, 205, 0.836);
@@ -81,15 +82,63 @@ ul {
   text-align: right;
   margin-right: 5%;
 }
-.col-3 {
+#addNewProduct {
+  background-color: rgba(255, 235, 205, 0.836);
+  border: 3px solid rgb(0, 0, 0);
+  background-size: cover;
+  height: 8em;
+  text-align: center;
+  margin: .5em;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.productCard {
   background-color: rgba(255, 235, 205, 0.836);
   background: image-url('bob.jpg');
-  border: 5px double black;
+  border: 3px solid rgb(0, 0, 0);
   background-size: cover;
-  height: 10em;
+  height: 8em;
   text-align: center;
+  margin: .5em;
+  margin-left: 4%;
+  margin-right: 4%;
+  color:rgba(255, 235, 205, 0);
+  text-decoration: none;
 }
-// #productPagePic {
-//   width: 100%;
-//   background-size: cover;
-// }
+.col-3:hover{
+  a{
+  display: block;
+  color:rgba(10, 9, 7, 0.836);
+  font-size: 36px;
+  }
+}
+.gridText {
+  margin-top:40%;
+  margin-bottom: 50%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  a {
+    color:rgba(255, 235, 205, 0);
+    text-decoration: none;
+  }
+}
+.newProductText {
+  color: black;
+  margin-top:30%;
+  margin-bottom: 30%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    color: black;
+    }
+}
+#homeLink {
+  a {
+  text-decoration: none;
+  color: black;
+  }
+}
