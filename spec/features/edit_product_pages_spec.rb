@@ -14,4 +14,18 @@ describe "editing a product" do
     click_on 'Update Product'
     expect(page).to have_content 'Pepper'
   end
+
+  it "gives an error when no name is entered" do
+    visit products_path
+    click_link 'Add Product'
+    fill_in 'Name', :with => 'Salt'
+    fill_in 'Cost', :with => '1.23'
+    fill_in 'Country of origin', :with => 'United States'
+    click_on 'Create Product'
+    click_on 'Salt'
+    click_on 'Edit Product'
+    fill_in 'Name', :with => ''
+    click_on 'Update Product'
+    expect(page).to have_content "Name can't be blank"
+  end
 end
