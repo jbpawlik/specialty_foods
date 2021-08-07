@@ -1,1 +1,18 @@
-<%= render "layouts/review_form", :object => @review %>
+<body id="newReviewPage">
+  <div class="container backbox">
+    <div class="row">
+      <div class="col">
+        <%= image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{@product.name}"])}", class: "reviewPic") %>
+      </div>
+      <div class="col">
+        <h1><%= @product.name %></h1>
+        <br>
+        <%= @product.country_of_origin %>
+        <br>
+        <%= render "layouts/review_form", :object => @review %>
+      </div>
+    </div>
+    <span class="linkBack"><%= link_to "Return to Review", product_review_path(@product, @review) %></span>
+  </div>
+</body>
+

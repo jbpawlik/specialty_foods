@@ -45,8 +45,8 @@ ul {
   word-wrap: break-word;
   padding: 1em;
 }
-.productPic {
-  width: 20em;
+.productPic, .reviewPic {
+  width: 15em;
   border: 3px solid black;
 }
 #authorCredit {
@@ -69,7 +69,11 @@ ul {
   background-size: cover;
 }
 #editProduct {
-  background: image-url('salami.jpb');
+  background: image-url('salami.jpg');
+  background-size: cover;
+}
+#newReviewPage {
+  background: image-url('cheese.jpg');
   background-size: cover;
 }
 #productLink, #homeLink, .linkBack {

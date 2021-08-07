@@ -2,13 +2,13 @@
 
 
 <%= form_for [@product, @review] do |f| %>
-  <%= f.text_field :author %>
-  <%= f.label :author %>
+  <%= f.text_field :author, class: "form-control" %>
+  <%= f.label :author, class: "formLabel" %>
   <br>
-  <%= f.text_area :content_body %>
-  <%= f.label :review_text %>
+  <%= f.text_area :content_body, class: "form-control" %>
+  <%= f.label :review_text, class: "formLabel" %>
   <br>
-  <%= f.number_field :rating %>
-  <%= f.label :rating %>
-  <p><%= f.submit %></p>
+  <%= f.number_field :rating, class: "form-control" %>
+  <%= f.label :rating, class: "formLabel" %>
+  <span id="newProductSubmit"><%= f.submit %></span>
 <% end %>
