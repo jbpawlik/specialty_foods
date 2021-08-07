@@ -83,9 +83,11 @@ ul {
 }
 .col-3 {
   background-color: rgba(255, 235, 205, 0.836);
+  background: image-url('bob.jpg');
   border: 5px double black;
   background-size: cover;
   height: 10em;
+  text-align: center;
 }
 // #productPagePic {
 //   width: 100%;

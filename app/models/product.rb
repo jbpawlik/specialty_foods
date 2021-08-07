@@ -19,7 +19,6 @@ class Product < ApplicationRecord
     .limit(3)
     )}
 
-
   private
     def titleize_product
       self.name = self.name.titleize

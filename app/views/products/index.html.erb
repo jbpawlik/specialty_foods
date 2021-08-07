@@ -1,6 +1,6 @@
 <body id="productsPage">
   <h1 id="productsHeader">Mario's Fine Foods</h1>
-  <h6>
+  <h4>
     <% if @products.any? %>
       <% @products.each_with_index do |product, index| %>
         <% if index === 0 %>
@@ -26,7 +26,7 @@
     <div class=row>
   <% else %>
     <p>There are no products yet.</p>
-  <% end %><h6>
+  <% end %><h4>
   </div>
 
 
