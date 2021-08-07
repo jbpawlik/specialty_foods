@@ -1,14 +1,36 @@
-<h1>Mario's Fine Foods</h1>
+<body id="productsPage">
+  <h1 id="productsHeader">Mario's Fine Foods</h1>
+  <h6>
+    <% if @products.any? %>
+      <% @products.each_with_index do |product, index| %>
+        <% if index === 0 %>
+          <div class="row">
+            <div class="col-3" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
+              <%= link_to product.name, product_path(product) %><br>
+              <%# image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}", class: "productPagePic") %>
+            </div>
+          <% elsif index % 4 === 0 %>
+            </div>
+            <div class="row">
+              <div class="col-3" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
+                <%= link_to product.name, product_path(product) %><br>
+                <%# image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}", class: "productPagePic") %>
+              </div>
+          <% else %>
+            <div class="col-3" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
+              <%= link_to product.name, product_path(product) %><br>
+              <%# image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}", class: "productPagePic") %>
+            </div>
+          <% end %>
+      <% end %>
+    <div class=row>
+  <% else %>
+    <p>There are no products yet.</p>
+  <% end %><h6>
+  </div>
 
-<h2><% if @products.any? %>
-  <ul>
-    <% @products.each do |product| %>
-      <li><%= link_to product.name, product_path(product) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are no products yet.</p>
-<% end %><h2>
 
+  <p><%= link_to "Create new product", new_product_path %></p>
+  <p><%= link_to "Back to Home", '/' %></p>
 
-<p><%= link_to "Create new product", new_product_path %></p>
+</body>>

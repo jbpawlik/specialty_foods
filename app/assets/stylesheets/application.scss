@@ -18,6 +18,13 @@
 
 body{
 padding: 5em;
+font-family: 'Cormorant', serif;
+font-size: x-large;
+}
+#marioFineFoods {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: .5em;
 }
 #bob {
   height: 400;
@@ -38,6 +45,10 @@ ul {
 #authorCredit {
   margin-left: 60%;
 }
+#landing {
+  background: image-url('deli');
+  background-size: cover;
+}
 #reviewShow {
   background: image-url('bread.jpg');
   background-size: cover;
@@ -45,6 +56,20 @@ ul {
 #productShow{
   background: image-url('store_shelf.jpg');
   background-size: cover;
+}
+#productsPage{
+  background: image-url('deli2');
+  background-size: cover;
+}
+#productLink {
+  text-align: center;
+}
+#productsHeader {
+  background-color: rgba(255, 235, 205, 0.836);
+  border: 20px double black;
+  padding: .25em;
+  text-align: center;
+  margin: 1em;
 }
 .backbox {
   background-color: rgba(255, 235, 205, 0.836);
@@ -56,3 +81,13 @@ ul {
   text-align: right;
   margin-right: 5%;
 }
+.col-3 {
+  background-color: rgba(255, 235, 205, 0.836);
+  border: 5px double black;
+  background-size: cover;
+  height: 10em;
+}
+// #productPagePic {
+//   width: 100%;
+//   background-size: cover;
+// }

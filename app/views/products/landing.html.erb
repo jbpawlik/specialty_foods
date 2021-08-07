@@ -1,43 +1,45 @@
-<div class="container backbox">
-  <div class="row">
-    <div class="col">
-      <%= image_tag("bob.jpg", height: "400px", id: "bob") %>
-    </div>
-    <div class="col">
-      <h1>Mario's Fine Foods</h1>
-      <p>Since 1982, Mario's has been a beloved staple of the independent grocery scene. Mario's specializes in imported mushrooms, turtle soup, and what his grandchildren refer to as "<em>fire</em>" flowers.</p>
-      <p><%= link_to "See All of Our Products", products_path(@product) %></p>
-    </div>
-  </div>
-</div>
-<div class="container backbox">
-  <div class="row">
-    <div class="col-4">
-      <h4>New Products</h4>
-      <% most_recent = @products.three_most_recent %>
-      <ul>
-        <% most_recent.to_a.each do |product| %>
-          <li><%= link_to product.name, product_path(product) %></li>
-        <% end %>
-      </ul>
-    </div>
-    <div class="col-4">
-      <h4>Domestic Products</h4>
-      <% local = @products.made_in_usa %>
-      <ul>
-        <% local.to_a.each do |product| %>
-          <li><%= link_to product.name, product_path(product) %></li>
-        <% end %>
-      </ul>
-    </div>
-    <div class="col-4">
-      <h4>Most Reviewed</h4>
-      <% popular = @products.most_reviewed %>
-      <ol>
-        <% popular.to_a.each do |product| %>
-          <li><% most_pop = Product.find(product.id) %><%= link_to most_pop.name, product_path(product) %></li>
-        <% end %>
-      </ol>
+<body id="landing">
+  <div class="container backbox">
+    <div class="row">
+      <h1 id="marioFineFoods">Mario's Fine Foods</h1>
+      <div class="col">
+        <%= image_tag("bob.jpg", height: "400px", id: "bob") %>
+      </div>
+      <div class="col">
+        <h3><br><br>Since 1982, Mario's has been a beloved staple of the independent grocery scene. Mario's specializes in imported mushrooms, turtle soup, and what his grandchildren refer to as "<em>fire</em>" flowers.</h3>
+      </div>
     </div>
   </div>
-</div>
+  <div class="container backbox">
+    <div class="row">
+      <div class="col-4">
+        <h4>New</h4>
+        <% most_recent = @products.three_most_recent %>
+        <ul>
+          <% most_recent.to_a.each do |product| %>
+            <li><%= link_to product.name, product_path(product) %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-4">
+        <h4>Domestic</h4>
+        <% local = @products.made_in_usa %>
+        <ul>
+          <% local.to_a.each do |product| %>
+            <li><%= link_to product.name, product_path(product) %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-4">
+        <h4>Top Reviewed</h4>
+        <% popular = @products.most_reviewed %>
+        <ol>
+          <% popular.to_a.each do |product| %>
+            <li><% most_pop = Product.find(product.id) %><%= link_to most_pop.name, product_path(product) %></li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
+    <h2 id="productLink"><%= link_to "See All of Our Products", products_path(@product) %></h2>
+  </div>
+</body>
