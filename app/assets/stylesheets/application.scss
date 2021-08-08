@@ -125,7 +125,7 @@ ul {
   margin: .5em;
   margin-left: 4%;
   margin-right: 4%;
-  transition: .5s ease;
+  // transition: .5s ease;
   filter: grayscale(70%);
 }
 .productCard:hover {
@@ -135,11 +135,11 @@ ul {
   background-color:bisque;
   color: black;
   text-decoration: none;
-  display: block;
   text-align: center;
   position: fixed;
   bottom: 0;
   right: 0;
+  left: 0;
 }
 .newProductText {
   color: black;
