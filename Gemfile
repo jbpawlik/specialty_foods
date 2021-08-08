@@ -38,6 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'jquery-rails'
 gem 'bootstrap', '~> 5.0.1'
 gem 'faker'
+gem 'kaminari'
 
 
 group :development, :test do

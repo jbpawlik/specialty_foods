@@ -1,66 +1,31 @@
 {
   "RSpec": {
     "coverage": {
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/channels/application_cable/channel.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/channels/application_cable/connection.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/helpers/application_helper.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/product.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          2,
-          null,
-          2,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          10,
-          10,
-          null,
-          null
-        ]
-      },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/review.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          5,
-          null,
           null
         ]
       },
@@ -129,12 +94,6 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/reviews_controller.rb": {
         "lines": [
           1,
@@ -192,45 +151,78 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/channels/application_cable/channel.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/channels/application_cable/connection.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/jobs/application_job.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
       },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/mailers/application_mailer.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/product.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          10,
+          10,
+          null,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/review.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          5,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1628343809
+    "timestamp": 1628438849
   }
 }

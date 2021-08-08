@@ -27,7 +27,7 @@ font-size: x-large;
   padding-bottom: .5em;
 }
 #bob {
-  height: 400;
+  height: 300;
   border: 10px solid black;
 }
 ul {
@@ -88,6 +88,7 @@ ul {
 }
 #productsHeader {
   background-color: rgba(255, 235, 205, 0.836);
+  color: black;
   border: 20px double black;
   padding: .25em;
   text-align: center;
@@ -108,7 +109,7 @@ ul {
 }
 #addNewProduct {
   background-color: rgba(255, 235, 205, 0.836);
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid black;
   background-size: cover;
   height: 8em;
   text-align: center;
@@ -117,49 +118,32 @@ ul {
   margin-right: 4%;
 }
 .productCard {
-  background-color: rgba(255, 235, 205, 0.836);
-  background: image-url('bob.jpg');
+  background: image-url('store_shelf.jpg');
   border: 3px solid rgb(0, 0, 0);
   background-size: cover;
   height: 8em;
-  text-align: center;
   margin: .5em;
   margin-left: 4%;
   margin-right: 4%;
-  color:rgba(255, 235, 205, 0);
-  text-decoration: none;
   transition: .5s ease;
-  backface-visibility: hidden
+  filter: grayscale(70%);
 }
 .productCard:hover {
-  filter: grayscale(100%);  
+  filter: none;
 }
-.col-3:hover{
-  a {
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px honeydew;  
-    font-size: 36px;
-  }
-  a:hover {
-    color:rgb(48, 15, 15)
-  }
-}
-.gridText {
-  margin-top:30%;
-  margin-bottom: 30%;
-  display: flex;
-  justify-content:center;
-  a {
-    color:rgba(255, 235, 205, 0);
-    text-decoration: none;
-  }
-  a:hover {
-    color:rgb(48, 15, 15)
-  }
+.gridText a {
+  background-color:bisque;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 .newProductText {
   color: black;
-  margin-top:30%;
+  margin-top:40%;
   margin-bottom: 30%;
   display: flex;
   align-items: center;
@@ -169,9 +153,9 @@ ul {
     text-decoration: none;
     color: black;
     }
-    a:hover {
-      color:rgb(48, 15, 15)
-    }
+  a:hover {
+    color:rgb(48, 15, 15)
+  }
 }
 #homeLink {
   padding-top: 1em;
@@ -197,7 +181,7 @@ ul {
 }
 #newProductHeader {
   background-color: rgba(255, 235, 205, 0.836);
-  border: 5px double rgb(0, 0, 0);
+  border: 5px double black;
   text-align: center;
 }
 .form-control {
@@ -207,6 +191,15 @@ ul {
   text-align: center;
   a {
     text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color:rgb(48, 15, 15)
+  }
+}
+.pagination {
+  margin-left: 20%;
+  a {
     color: black;
   }
   a:hover {

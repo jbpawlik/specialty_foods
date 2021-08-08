@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.order(:name)
+    @products = Product.order(:name).page(params[:page])
     render :index
   end
 

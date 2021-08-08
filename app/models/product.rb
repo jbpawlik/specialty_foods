@@ -3,6 +3,7 @@ class Product < ApplicationRecord
   validates :name, presence: true
   validates :cost, presence: true
   validates :country_of_origin, presence: true
+  # paginates_per 10
 
   before_save(:titleize_product)
 
