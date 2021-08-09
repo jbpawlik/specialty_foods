@@ -36,10 +36,8 @@ ul {
   a {
     text-decoration: none;
     color: black;
-    }
-  a:hover {
-    color:rgb(48, 15, 15)
   }
+
 }
 #reviewText {
   word-wrap: break-word;
@@ -78,13 +76,13 @@ ul {
 }
 #productLink, #homeLink, .linkBack {
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
     }
-    a:hover {
-      color:rgb(48, 15, 15)
-    }
   text-align: center;
+  a:hover {
+    color:rgb(141, 28, 28)
+  }
 }
 #productsHeader {
   background-color: rgba(255, 235, 205, 0.836);
@@ -154,18 +152,18 @@ ul {
     text-decoration: none;
     color: black;
     }
-  a:hover {
-    color:rgb(48, 15, 15)
-  }
+
 }
 #homeLink {
   padding-top: 1em;
   a {
   text-decoration: none;
   color: black;
+  text-decoration: underline;
+
   }
   a:hover {
-    color:rgb(48, 15, 15)
+    color:rgb(141, 28, 28)
   }
 }
 #newProduct {
@@ -191,11 +189,8 @@ ul {
 .col-4 {
   text-align: center;
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
-  }
-  a:hover {
-    color:rgb(48, 15, 15)
   }
 }
 .pagination {
@@ -203,7 +198,7 @@ ul {
   a {
     color: black;
   }
-  a:hover {
-    color:rgb(48, 15, 15)
-  }
+}
+a:hover {
+  color:rgb(141, 28, 28)
 }
