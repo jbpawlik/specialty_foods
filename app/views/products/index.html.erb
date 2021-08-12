@@ -5,7 +5,7 @@
         <% @products.each_with_index do |product, index| %>
           <% if index === 0 %>
             <div class="row">
-              <div class="col-3 productCard" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}"%>)">
+              <div class="  col-3 productCard" style="background-image: url(<%= "#{Faker::LoremFlickr.image(search_terms: ["#{product.name}"])}" %>)">
                 <h5 class="gridText"><%= link_to product.name, product_path(product) %></h5>
               </div>
           <% elsif index % 3 === 0 %>

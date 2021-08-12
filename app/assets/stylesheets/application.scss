@@ -37,7 +37,6 @@ ul {
     text-decoration: none;
     color: black;
   }
-
 }
 #reviewText {
   word-wrap: break-word;
@@ -116,6 +115,16 @@ ul {
   margin-right: 4%;
 }
 .productCard:hover {
+  filter: grayscale(70%);
+}
+.productCard {
+  background: image-url('store_shelf.jpg');
+  border: 3px solid rgb(0, 0, 0);
+  background-size: cover;
+  height: 8em;
+  margin: .5em;
+  margin-left: 4%;
+  margin-right: 4%;
   filter: grayscale(0%);
 }
 .gridText {
@@ -130,16 +139,6 @@ ul {
   left: 0;
   }
 }
-.productCard {
-  background: image-url('store_shelf.jpg');
-  border: 3px solid rgb(0, 0, 0);
-  background-size: cover;
-  height: 8em;
-  margin: .5em;
-  margin-left: 4%;
-  margin-right: 4%;
-  filter: grayscale(70%);
-}
 .newProductText {
   color: black;
   margin-top:40%;
@@ -152,7 +151,6 @@ ul {
     text-decoration: none;
     color: black;
     }
-
 }
 #homeLink {
   padding-top: 1em;
@@ -160,7 +158,6 @@ ul {
   text-decoration: none;
   color: black;
   text-decoration: underline;
-
   }
   a:hover {
     color:rgb(141, 28, 28)

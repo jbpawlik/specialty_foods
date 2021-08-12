@@ -18,7 +18,7 @@ ActiveRecord::Base.connection.reset_pk_sequence!(Review.table_name)
   Product.create!(name: Faker::Food.ingredient, cost: Faker::Commerce.price, country_of_origin: Faker::Address.country ) 
 end
 
-50.times do |index|
+250.times do |index|
 Review.create!(author: Faker::Name.name, rating: Faker::Number.rand(1..5), content_body: Faker::Hipster.words(number: 10..20).join(" "), product_id: Faker::Number.rand(1..50))
 end
 
