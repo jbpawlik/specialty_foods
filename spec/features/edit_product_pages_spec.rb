@@ -2,7 +2,12 @@ require 'rails_helper'
 
 describe "editing a product" do
   it "it edits a product" do
-    visit products_path
+    visit "/signup"
+    fill_in "user_email", :with => "admin@marios.com"
+    fill_in "user_password", :with => "Admin2002!"
+    fill_in "user_password_confirmation", :with => "Admin2002!"
+    click_on "Sign Up"
+    click_on "See All of Our Products"
     click_link 'Add Product'
     fill_in 'Name', :with => 'Salt'
     fill_in 'Cost', :with => '1.23'
@@ -16,7 +21,12 @@ describe "editing a product" do
   end
 
   it "gives an error when no name is entered" do
-    visit products_path
+    visit "/signup"
+    fill_in "user_email", :with => "admin@marios.com"
+    fill_in "user_password", :with => "Admin2002!"
+    fill_in "user_password_confirmation", :with => "Admin2002!"
+    click_on "Sign Up"
+    click_on "See All of Our Products"
     click_link 'Add Product'
     fill_in 'Name', :with => 'Salt'
     fill_in 'Cost', :with => '1.23'
