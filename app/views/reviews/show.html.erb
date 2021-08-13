@@ -1,14 +1,20 @@
 <body id="reviewShow">
   <div class="container backbox">
     <div class="row">
-      <div class="col">
+      <div class="col-5">
         <%= image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{@product.name}"])}", width: "100px", class: "productPic") %>
       </div>
-      <div class="col">
-        <h1><%= @product.name %></h1>
-        <h3><%= @product.country_of_origin %><br><br><%= @review.rating %> out of 5 Stars</h3>
+      <div class="col-7" id="reviewText">
+        <h1><%= @product.name %> - <%= @product.country_of_origin %></h1>
+        <h3>
+          <br>
+          <%= @review.rating %> out of 5
+          <br>
+          <br>
+          <br>
+          "<%= @review.content_body.titleize %>."<br><span id="authorCredit">- <%= @review.author %></span>
+        </h3>
       </div>
-      <h3 id="reviewText">"<%= @review.content_body.titleize %>."<br><span id="authorCredit">- <%= @review.author %></span></h3>
     </div>
     <div class="row">
       <div class="col-4">

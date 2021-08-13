@@ -1,12 +1,13 @@
 <body id="newReviewPage">
   <div class="container backbox">
     <div class="row">
-      <div class="col">
+      <div class="col-6">
         <%= image_tag("#{Faker::LoremFlickr.image(search_terms: ["#{@product.name}"])}", width: "100px", class: "productPic") %>
       </div>
-      <div class="col">
+      <div class="col-6">
         <h1><%= @product.name %></h1>
         <h3><%= @product.country_of_origin %>
+        <br>
         <br>
         <%= render "layouts/review_form", :object => @review %>
       </div>

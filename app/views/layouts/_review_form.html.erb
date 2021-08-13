@@ -1,14 +1,14 @@
 <%= render "layouts/errors", :object => @review %>
-
-
-<%= form_for [@product, @review] do |f| %>
-  <%= f.text_field :author, class: "form-control" %>
-  <%= f.label :author, class: "formLabel" %>
-  <br>
-  <%= f.text_area :content_body, class: "form-control", id: "text_area" %>
-  <%= f.label :review_text, class: "formLabel"  %>
-  <br>
-  <%= f.number_field :rating, class: "form-control" %>
-  <%= f.label :rating, class: "formLabel" %>
-  <span id="newProductSubmit"><%= f.submit %></span>
-<% end %>
+<div class="signForm">
+  <%= form_for [@product, @review] do |f| %>
+    <%= f.text_field :author, class: "form-control" %>
+    <%= f.label :author, class: "formLabel" %>
+    <br>
+    <%= f.text_area :content_body, class: "form-control", id: "text_area" %>
+    <%= f.label :review_text, class: "formLabel"  %>
+    <br>
+    <%= f.number_field :rating, class: "form-control" %>
+    <%= f.label :rating, class: "formLabel" %>
+    <span id="newProductSubmit"><%= f.submit %></span>
+  <% end %>
+</div>

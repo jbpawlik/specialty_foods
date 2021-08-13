@@ -58,14 +58,18 @@ ul {
 }
 #reviewText {
   word-wrap: break-word;
-  padding: 1em;
+  padding: 2em;
 }
 .productPic, .reviewPic {
-  width: 15em;
-  border: 3px solid black;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 10px solid black;
+  margin: 1em;
 }
 #authorCredit {
-  margin-left: 60%;
+  margin-left: 50%;
+  padding: .25em;
 }
 #landing, #signUp, #signIn {
   background: image-url('deli');
@@ -161,7 +165,7 @@ ul {
 }
 .newProductText {
   color: black;
-  margin-top:40%;
+  margin-top: 30%;
   margin-bottom: 30%;
   display: flex;
   align-items: center;
@@ -204,6 +208,8 @@ ul {
   border:black 1px solid;
 }
 .col-4 {
+  margin-top: 3em;
+  margin-bottom: 2em;
   text-align: center;
   h4 {
     margin-left: 10%;

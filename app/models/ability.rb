@@ -3,12 +3,21 @@
 class Ability
   include CanCan::Ability
 
+
+
   def initialize(user)
+
+    config.model User do
+      update do
+        exclude_fields :password, :password_confirmation
+      end
+    end
 
       can :access, :rails_admin  
       can :read, :all
       can :edit, :all
       can :destroy, :all
+      can :update, :all
 
     # Define abilities for the passed in user here. For example:
     #
