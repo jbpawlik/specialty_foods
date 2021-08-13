@@ -12,11 +12,11 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  # def authorize
-  #   if !current_user
-  #     flash[:alert] = "You aren't authorized to visit that page."
-  #     redirect_to '/'
-  #   end
-  # end
+  def authorize
+    if !current_user
+      flash[:alert] = "Please sign in to view that page."
+      redirect_to '/products'
+    end
+  end
 
 end

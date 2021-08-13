@@ -16,6 +16,21 @@ ActiveRecord::Base.connection.reset_pk_sequence!(User.table_name)
 ActiveRecord::Base.connection.reset_pk_sequence!(Product.table_name)
 ActiveRecord::Base.connection.reset_pk_sequence!(Review.table_name)
 
+admin=User.new({ email: 'admin@marios.com',
+  password: 'Admin2002!', password_confirmation: 'Admin2002!'})
+
+admin.toggle!(:admin)
+
+  if admin.valid?
+    admin.save()
+  elsif admin.errors.any?
+    admin.errors.full_messages.each do |msg|
+      puts msg
+    end
+  else
+    puts "****NOT VALID****"
+  end
+
 50.times do |index|
   Product.create!(name: Faker::Food.ingredient, cost: Faker::Commerce.price, country_of_origin: Faker::Address.country ) 
 end
