@@ -28,15 +28,15 @@
           null,
           null,
           1,
-          305,
-          296,
+          324,
+          315,
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          19,
+          0,
+          0,
           null,
           null,
           null,
@@ -116,6 +116,9 @@
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/reviews_controller.rb": {
         "lines": [
           1,
+          null,
+          1,
+          null,
           1,
           5,
           5,
@@ -367,6 +370,9 @@
           null,
           1,
           null,
+          null,
+          null,
+          null,
           1,
           9,
           null,
@@ -375,6 +381,6 @@
         ]
       }
     },
-    "timestamp": 1628875856
+    "timestamp": 1628881601
   }
 }
