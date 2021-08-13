@@ -7,12 +7,6 @@ class Ability
 
   def initialize(user)
 
-    config.model User do
-      update do
-        exclude_fields :password, :password_confirmation
-      end
-    end
-
       can :access, :rails_admin  
       can :read, :all
       can :edit, :all

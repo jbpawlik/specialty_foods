@@ -38,5 +38,4 @@ class User < ApplicationRecord
   def set_admin
     self.admin = true unless User.exists?
   end
-
 end
