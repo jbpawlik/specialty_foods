@@ -25,6 +25,8 @@
             <% if current_user.admin %>
               <h3 class="newProductText"><%= link_to "Add Product", new_product_path %></h3>
             <% end %>
+          <% else %>
+            <h3 class="newProductText">And so much more!</h3>
           <% end %>
         </div>
       <% else %>
