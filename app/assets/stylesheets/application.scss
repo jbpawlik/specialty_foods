@@ -39,6 +39,15 @@ ul {
     color: black;
   }
 }
+#signInHeader {
+  display: flex;
+  padding-top: 50%;
+  padding-left: 25%
+}
+.signForm {
+  padding-left: 10%;
+  margin-right: 10%;
+}
 #reviewText {
   word-wrap: break-word;
   padding: 1em;
@@ -50,7 +59,7 @@ ul {
 #authorCredit {
   margin-left: 60%;
 }
-#landing, #signUp {
+#landing, #signUp, #signIn {
   background: image-url('deli');
   background-size: cover;
 }
@@ -216,5 +225,5 @@ a:hover {
   text-align: center;
 }
 .alert {
-  background-color: blanchedalmond;
+  background-color: rgba(255, 235, 205, 0.836);
 }
