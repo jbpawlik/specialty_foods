@@ -1,5 +1,4 @@
 class ProductsController < ApplicationController
-
   def landing
     @products = Product.all
     @reviews = Review.all
