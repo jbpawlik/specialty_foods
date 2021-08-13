@@ -14,6 +14,7 @@ class User < ApplicationRecord
   validates :password, :presence => true, format: { with: PASSWORD_REQUIREMENTS, message: "must be 8 or more characters, including lower and upper case letters and at least one number and symbol" }
 
   before_save :encrypt_password
+  before_create :set_admin
 
   def encrypt_password
     self.password_salt = BCrypt::Engine.generate_salt
@@ -28,4 +29,11 @@ class User < ApplicationRecord
       nil
     end
   end
+
+  private
+
+  def set_admin
+    self.admin = true unless User.exists?
+  end
+
 end

@@ -10,7 +10,9 @@
 
 Product.destroy_all
 Review.destroy_all
+User.destroy_all
 
+ActiveRecord::Base.connection.reset_pk_sequence!(User.table_name)
 ActiveRecord::Base.connection.reset_pk_sequence!(Product.table_name)
 ActiveRecord::Base.connection.reset_pk_sequence!(Review.table_name)
 

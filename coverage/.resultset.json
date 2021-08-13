@@ -52,7 +52,6 @@
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/products_controller.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
           1,
@@ -236,6 +235,51 @@
           null
         ]
       },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/ability.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/application_record.rb": {
         "lines": [
           1,
@@ -312,6 +356,7 @@
           1,
           null,
           1,
+          1,
           null,
           1,
           0,
@@ -324,12 +369,19 @@
           0,
           null,
           null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1628866684
+    "timestamp": 1628869869
   }
 }
