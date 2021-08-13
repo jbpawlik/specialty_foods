@@ -20,6 +20,26 @@
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          61,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -151,6 +171,57 @@
           null
         ]
       },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
       "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/jobs/application_job.rb": {
         "lines": [
           1,
@@ -222,8 +293,43 @@
           null,
           null
         ]
+      },
+      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1628862084
+    "timestamp": 1628866684
   }
 }
