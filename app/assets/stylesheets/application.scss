@@ -31,6 +31,9 @@ font-size: x-large;
   border: 10px solid black;
   background-color: black;
 }
+input[type="text"], input[type="password"] {
+  text-align: right;
+}
 ul {
   list-style: none;
   text-decoration: none;
@@ -49,6 +52,9 @@ ul {
   margin-right: 10%;
   display: flex;
   flex-direction: column;
+  input[type="submit"] {
+    width: 90%;
+  }
 }
 #reviewText {
   word-wrap: break-word;
@@ -199,6 +205,9 @@ ul {
 }
 .col-4 {
   text-align: center;
+  h4 {
+    margin-left: 10%;
+  }
   a {
     text-decoration: underline;
     color: black;

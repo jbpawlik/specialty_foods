@@ -5,17 +5,19 @@
         <h1 id="signInHeader">Sign In</h1>
       </div>
       <div class="col-6">
-        <%= form_tag signin_path, class:"signForm" do %>
-          <%= label_tag :email %>
-          <%= text_field_tag :email %>
-          <br>
-          <br>
-          <%= label_tag :password %>
-          <%= password_field_tag :password %>
-          <br>
-          <br>
-          <%= submit_tag "Sign in" %>
-        <% end %>
+        <div class="signForm">
+          <%= form_tag signin_path do %>
+            <%= label_tag :email %>
+            <%= text_field_tag :email %>
+            <br>
+            <br>
+            <%= label_tag :password %>
+            <%= password_field_tag :password %>
+            <br>
+            <br>
+            <%= submit_tag "Sign in" %>
+          <% end %>
+        </div>
       </div>
     </div>
     <h1 id="homeLink"><%= link_to "Back to Home", '/' %></h1>

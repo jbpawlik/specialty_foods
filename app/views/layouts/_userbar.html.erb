@@ -1,16 +1,19 @@
-<div class="row" id="userBar">
-  <div class="col">
-    <% if current_user %>
-      <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
+<div id="userBar">
+  <% if current_user %>
+    <% if current_user.admin %>
+      <div class="row">
+        <div class="col">
+          <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
+        </div>
+        <div class="col">
+          <%= link_to "Administrators", '/admin' %>
+        </div>
+      </div>
     <% else %>
-      <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin' %>
+      <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
     <% end %>
-  </div>
-  <div class="col">
-    <% if current_user %>
-      <% if current_user.admin %>
-        <%= link_to "Administrators", '/admin' %>
-      <% end %>
-    <% end %>
+  <% else %>
+    <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin' %>
+  <% end %>
   </div>
 </div>

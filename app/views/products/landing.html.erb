@@ -6,14 +6,14 @@
       </div>
       <div class="col">
         <h1 id="marioFineFoods">Mario's Fine Foods</h1>
-        <h3>Since 1982, Mario's has been a beloved staple of the independent grocery scene. Mario's specializes in imported mushrooms, turtle soup, and what his grandchildren refer to as "<em>fire</em>" flowers.</h3>
+        <h3>Since 1982, Mario's has been a beloved staple of the independent grocery scene. Started by Nana Peach and Papa Mario after his retirement from plumbing, the market specializes in imported mushrooms, turtle soup, and what Mario's grandchildren say is a "<em>fire</em>" floral selection.</h3>
       </div>
     </div>
   </div>
   <div class="container backbox">
     <div class="row">
       <div class="col-4">
-        <h4>New</h4>
+        <h4>New Products</h4>
         <% most_recent = @products.three_most_recent %>
         <ul>
           <% most_recent.to_a.each do |product| %>
@@ -22,7 +22,7 @@
         </ul>
       </div>
       <div class="col-4">
-        <h4>Domestic</h4>
+        <h4>Domestic Items</h4>
         <% local = @products.made_in_usa %>
         <ul>
           <% local.to_a.each do |product| %>
