@@ -12,13 +12,17 @@
     </div>
     <div class="row">
       <div class="col-4">
-    <p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>
+        <% if current_user.admin %>
+          <p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>
+        <% end %>
       </div>
       <div class="col-4">
-    <p><%= link_to "Delete review", product_review_path(@product, @review), :data => {:confirm => "Are you sure?", :method => "delete"} %></p>
+        <% if current_user.admin %>
+          <p><%= link_to "Delete review", product_review_path(@product, @review), :data => {:confirm => "Are you sure?", :method => "delete"} %></p>
+        <% end %>
       </div>
       <div class="col-4">
-    <%= link_to "Return to products", product_path(@product) %>
+        <%= link_to "Return to products", product_path(@product) %>
       </div>
     </div>
   </div>
