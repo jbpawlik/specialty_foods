@@ -21,15 +21,18 @@ admin=User.new({ email: 'admin@marios.com',
 
 admin.toggle!(:admin)
 
-  if admin.valid?
-    admin.save()
-  elsif admin.errors.any?
-    admin.errors.full_messages.each do |msg|
-      puts msg
-    end
-  else
-    puts "****NOT VALID****"
+if admin.valid?
+  admin.save()
+elsif admin.errors.any?
+  admin.errors.full_messages.each do |msg|
+    puts msg
   end
+else
+  puts "****NOT VALID****"
+end
+
+User.create!({ email: 'person@humanbeings.com',
+  password: 'User2002!', password_confirmation: 'User2002!'})
 
 50.times do |index|
   Product.create!(name: Faker::Food.ingredient, cost: Faker::Commerce.price, country_of_origin: Faker::Address.country ) 
