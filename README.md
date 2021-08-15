@@ -8,7 +8,7 @@
 Mario's Fine Foods is a proof-of-concept website for an independent grocery store. Users can sign up for the site or log in as an administrator. A user can browse products and add reviews, while an administrator can add and edit products and reviews.
 
 ### __Technologies Used__
-Mario's Fine Foods was written in Ruby, with Rails and ActiveRecord. Debugging was handled by Pry and Byebug. Testing was done with RSpec, Capybara, and Simplecov. Page content is written as embedded Ruby/HTML, with styling from CSS. The database is managed with Postgres and seeded with Faker. Authorization and authentication handled by BCrypt, Rails Admin, and CanCanCan. 
+Mario's Fine Foods was written in Ruby on Rails. Debugging was handled by Pry and Byebug. Testing was done with RSpec, Capybara, and Simplecov. Page content is written as embedded Ruby/HTML, with styling from CSS. The database is managed with Postgres and seeded with Faker. Authorization and authentication handled by BCrypt, Rails Admin, and CanCanCan. 
 
 ### __Setup/Installation__
 Setup for this project assumes that you have Ruby installed on your personal computer. Ruby can be downloaded [here](https://www.ruby-lang.org/en/downloads/)
