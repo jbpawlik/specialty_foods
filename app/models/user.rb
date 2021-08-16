@@ -31,10 +31,7 @@ class User < ApplicationRecord
   end
 
   private
-  # def password_required?
-  #   new_record? ? super : false
-  # end  
-
+  
   def set_admin
     self.admin = true unless User.exists?
   end

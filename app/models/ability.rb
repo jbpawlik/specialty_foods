@@ -12,6 +12,7 @@ class Ability
       can :edit, :all
       can :destroy, :all
       can :update, :all
+      can :manage, :all
 
     # Define abilities for the passed in user here. For example:
     #
