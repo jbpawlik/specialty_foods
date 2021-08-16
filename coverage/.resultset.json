@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/channels/application_cable/channel.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/channels/application_cable/channel.rb": {
         "lines": [
           1,
           1,
@@ -9,7 +9,7 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/channels/application_cable/connection.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/channels/application_cable/connection.rb": {
         "lines": [
           1,
           1,
@@ -17,7 +17,7 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/application_controller.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
@@ -43,13 +43,13 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/helpers/application_helper.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/products_controller.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/controllers/products_controller.rb": {
         "lines": [
           1,
           1,
@@ -113,7 +113,7 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/reviews_controller.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/controllers/reviews_controller.rb": {
         "lines": [
           1,
           null,
@@ -173,7 +173,7 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/sessions_controller.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
           1,
@@ -196,7 +196,7 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/controllers/users_controller.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/controllers/users_controller.rb": {
         "lines": [
           1,
           null,
@@ -224,13 +224,13 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/jobs/application_job.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/jobs/application_job.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/mailers/application_mailer.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/mailers/application_mailer.rb": {
         "lines": [
           1,
           1,
@@ -238,15 +238,18 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/ability.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/models/ability.rb": {
         "lines": [
           null,
           null,
           1,
           1,
           null,
+          null,
+          null,
           1,
           null,
+          0,
           0,
           0,
           0,
@@ -283,14 +286,14 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/application_record.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/product.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/models/product.rb": {
         "lines": [
           1,
           1,
@@ -322,7 +325,7 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/review.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/models/review.rb": {
         "lines": [
           1,
           1,
@@ -341,7 +344,7 @@
           null
         ]
       },
-      "C:/Users/redux/Epicodus/Week 11/specialty_foods/app/models/user.rb": {
+      "C:/Users/redux/Epicodus/Week11/specialty_foods/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -377,17 +380,13 @@
           null,
           1,
           null,
-          null,
-          null,
-          null,
           1,
           9,
-          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1628894005
+    "timestamp": 1629128128
   }
 }
