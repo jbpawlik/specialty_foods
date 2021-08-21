@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  before_action :authorize, except: [:index, :show]
+
   def landing
     @products = Product.all
     @reviews = Review.all
