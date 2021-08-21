@@ -50,6 +50,9 @@ describe "editing a review" do
     fill_in 'Author', :with => ''
     click_on 'Update Review'
     expect(page).to have_content "Author can't be blank"
+    click_on 'Sign out'
+    visit "/products/#{Product.last.id}/reviews/new"
+    expect(page).to have_content("Please sign in to view that page")
   end
 
 end

@@ -16,7 +16,7 @@ ActiveRecord::Base.connection.reset_pk_sequence!(User.table_name)
 ActiveRecord::Base.connection.reset_pk_sequence!(Product.table_name)
 ActiveRecord::Base.connection.reset_pk_sequence!(Review.table_name)
 
-admin=User.new({ email: 'admin@marios.com',
+admin = User.new({ email: 'admin@marios.com',
   password: 'Admin2002!', password_confirmation: 'Admin2002!'})
 
 admin.toggle!(:admin)
@@ -31,8 +31,8 @@ else
   puts "****NOT VALID****"
 end
 
-User.create!({ email: 'person@humanbeings.com',
-  password: 'User2002!', password_confirmation: 'User2002!'})
+User.create!({ email: 'test',
+  password: 'Password2002!', password_confirmation: 'Password2002!'})
 
 25.times do |index| 
   User.create!({ email: Faker::Internet.email, password: 'User2002!', password_confirmation: 'User2002!'})

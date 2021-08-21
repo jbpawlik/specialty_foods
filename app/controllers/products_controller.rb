@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :authorize, except: [:landing, :index, :show]
+  before_action :authorize, except: [:landing, :index, :show, :new]
   before_action :admin?, except: [:landing, :index, :show]
 
   def landing
@@ -14,6 +14,7 @@ class ProductsController < ApplicationController
   end
 
   def new
+    current_user.admin?
     @product = Product.new
     render :new
   end
@@ -35,7 +36,6 @@ class ProductsController < ApplicationController
   end
 
   def show
-    current_user
     @product = Product.find(params[:id])
     render :show
   end
