@@ -34,6 +34,10 @@ end
 User.create!({ email: 'person@humanbeings.com',
   password: 'User2002!', password_confirmation: 'User2002!'})
 
+25.times do |index| 
+  User.create!({ email: Faker::Internet.email, password: 'User2002!', password_confirmation: 'User2002!'})
+end
+
 50.times do |index|
   Product.create!(name: Faker::Food.ingredient, cost: Faker::Commerce.price, country_of_origin: Faker::Address.country ) 
 end

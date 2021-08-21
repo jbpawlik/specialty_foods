@@ -2,6 +2,7 @@ class User < ApplicationRecord
   attr_accessor :password
   validates_confirmation_of :password
   validates :email, :presence => true, :uniqueness => true
+  before_save :encrypt_password
 
   PASSWORD_REQUIREMENTS = /\A 
     (?=.{8,})
