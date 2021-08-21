@@ -28,14 +28,14 @@
       <div class="row">
         <div class="col-4">
           <% if current_user %>
-            <% if current_user.admin %>
+            <% if current_user.admin? %>
               <h2><%= link_to "Edit Product", edit_product_path(@product) %></h2>
             <% end %>
           <% end %>
         </div>
         <div class="col-4">
           <% if current_user %>
-            <% if current_user.admin %>
+            <% if current_user.admin? %>
               <h2><%= link_to "Delete Product", product_path(@product), :data => {:confirm => "You sure?", :method => "delete"} %></h2>
             <% end %>
           <% end %>

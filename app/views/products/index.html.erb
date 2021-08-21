@@ -22,7 +22,7 @@
         <% end %>
         <div class="col-3" id="addNewProduct">
           <% if current_user %>
-            <% if current_user.admin %>
+            <% if current_user.admin? %>
               <h3 class="newProductText"><%= link_to "Add Product", new_product_path %></h3>
             <% else %>
               <h3 class="newProductText">And so much more!</h3>

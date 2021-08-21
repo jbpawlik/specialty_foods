@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
     before_action :authorize, only: [:delete, :update, :patch, :index]
+    before_action :admin?, only: [:delete]
 
   def new
     @user = User.new
@@ -17,8 +18,14 @@ class UsersController < ApplicationController
     end
   end
 
-  private
+  def delete
+    @user = User.find(params[:id])
+    @user.destroy
+    flash[:notice] = "User successfully deleted!"
+    redirect_to '/'
+  end
 
+  private
   def user_params
     params.require(:user).permit(:email, :password, :password_confirmation)
   end

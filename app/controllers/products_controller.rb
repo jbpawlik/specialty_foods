@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :authorize, except: [:index, :show]
+  before_action :authorize, except: [:landing, :index, :show]
+  before_action :admin?, except: [:landing, :index, :show]
 
   def landing
     @products = Product.all
@@ -34,6 +35,7 @@ class ProductsController < ApplicationController
   end
 
   def show
+    current_user
     @product = Product.find(params[:id])
     render :show
   end
