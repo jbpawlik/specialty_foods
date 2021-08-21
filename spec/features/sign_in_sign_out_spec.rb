@@ -43,6 +43,5 @@ describe "signing in and out" do
     visit "/products/1/edit"
     expect(current_path).to eql("/signup")
     expect(page).to have_content("Only administrators")
-    
     end
 end
