@@ -16,7 +16,10 @@ class ApplicationController < ActionController::Base
   end
 
   def admin?
-    if current_user.admin == false
+    if !current_user
+      flash[:alert] = "Please sign in to view that page."
+      redirect_to '/signup'
+    elsif current_user.admin == false
       flash[:alert] = "Only administrators can see this page."
       redirect_to '/signup'
     end
