@@ -15,7 +15,7 @@ Setup for this project assumes that you have Ruby installed on your personal com
 1. Download or clone the [repository](http://github.com/jbpawlik/specialty_foods) to your local machine
 2. Navigate to the top level of the directory
 3. Open your terminal in this directory
-4. Mario's Fine Foods uses a database backup to store database information. To recreate the database, use the command "rake build[specialty_foods]". The database can be seeded by running "rake db:seed".
+4. Mario's Fine Foods uses a SQL database. The database can be created with 'db:create', migrations made with 'db:migrate', seeded by running "rake db:seed".
 NOTE: By default, the site generates two users. The first user, admin@marios.com (password: "Admin2002!") has admininistrative privileges and can make other users administrators. An admin panel can be found at 'localhost:3000' or by clicking the Administrators link when signed in as admin.
 5. To start the site, type "rails s". The site should open in your browser; if it does not, type localhost:3000 into your browser's address bar (if necessary, check the localhost path by reading the log displayed in the terminal after 'rails s')
 6. To run the specifications, type "rspec". RSpec will run the logic specifications, then Capybara will run the integration specs. Testing logs are available in ./coverage.
