@@ -220,11 +220,14 @@ ul {
   }
 }
 .pagination {
-  margin-left: 20%;
+  display: block;
+  padding-left: 19em;
+  padding-top: 2em;
   a {
     color: black;
   }
 }
+
 a:hover {
   color:rgb(141, 28, 28)
 }
